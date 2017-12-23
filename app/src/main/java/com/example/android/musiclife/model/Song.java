@@ -36,4 +36,11 @@ public class Song {
         return coverImage;
     }
 
+    @Override
+    public String toString() {
+       return ("Song Name " + getSong() +
+               " URL " + getUrl() +
+               " Cover Image " + getCoverImage() +
+               " Artists " + getArtists());
+    }
 }

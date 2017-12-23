@@ -1,5 +1,6 @@
 package com.example.android.musiclife.service;
 
+import com.example.android.musiclife.config.Config;
 import com.example.android.musiclife.model.Song;
 
 import java.util.List;
@@ -13,6 +14,6 @@ import retrofit2.http.Query;
  */
 
 public interface ApiEndPoint {
-   // @GET("/tracks?client_id=" + Config.CLIENT_ID)
-    Call<List<Song>> getRecentTracks(@Query("created_at") String date);
+    @GET("/studio")
+    Call<List<Song>> getRecentTracks();
 }
